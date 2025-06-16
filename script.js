@@ -24,7 +24,7 @@ form.addEventListener('submit', function(e) {
   pedido += `📍 Endereço: ${endereco}%0A`;
 
   detalhesPedido.innerText = decodeURIComponent(pedido.replace(/%0A/g, '\n'));
-  linkWhatsapp.href = `https://wa.me/SEUNUMERO?text=${pedido}`;
+  linkWhatsapp.href = `https://wa.me/5575974003081?text=${pedido}`;
 
   form.style.display = 'none';
   resumo.style.display = 'block';
