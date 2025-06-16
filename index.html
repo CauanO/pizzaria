@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pizzaria do Bairro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🍕 Pizzaria do Bairro</h1>
+    <p>As melhores pizzas da cidade, feitas com amor ❤️</p>
+  </header>
+
+  <section id="banner">
+    <img src="banner.jpg" alt="Banner Pizza" />
+  </section>
+
+  <section id="cardapio">
+    <h2>Nosso Cardápio</h2>
+    <div class="pizzas">
+      <div class="pizza-item">
+        <img src="calabresa.png" alt="Calabresa" />
+        <h3>Calabresa</h3>
+        <p>Calabresa fatiada, cebola, queijo e orégano.</p>
+      </div>
+      <div class="pizza-item">
+        <img src="frango.png" alt="Frango" />
+        <h3>Frango com Catupiry</h3>
+        <p>Frango desfiado com cremoso catupiry.</p>
+      </div>
+      <div class="pizza-item">
+        <img src="portuguesa.png" alt="Portuguesa" />
+        <h3>Portuguesa</h3>
+        <p>Presunto, ovo, cebola, pimentão e azeitonas.</p>
+      </div>
+      <div class="pizza-item">
+        <img src="queijo.png" alt="Quatro Queijos" />
+        <h3>Quatro Queijos</h3>
+        <p>Mussarela, provolone, gorgonzola e parmesão.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pedido">
+    <h2>Monte seu Pedido</h2>
+    <form id="pedidoForm">
+      <label>Tamanho:</label>
+      <select id="tamanho" required>
+        <option value="">Escolha o tamanho</option>
+        <option value="Pequena - R$30">Pequena - R$30</option>
+        <option value="Média - R$40">Média - R$40</option>
+        <option value="Grande - R$50">Grande - R$50</option>
+      </select>
+
+      <label>Escolha os sabores:</label>
+      <select id="sabor1" required>
+        <option value="">Sabor 1</option>
+        <option value="Calabresa">Calabresa</option>
+        <option value="Frango com Catupiry">Frango com Catupiry</option>
+        <option value="Portuguesa">Portuguesa</option>
+        <option value="Quatro Queijos">Quatro Queijos</option>
+      </select>
+
+      <select id="sabor2">
+        <option value="">Sabor 2 (opcional)</option>
+        <option value="Calabresa">Calabresa</option>
+        <option value="Frango com Catupiry">Frango com Catupiry</option>
+        <option value="Portuguesa">Portuguesa</option>
+        <option value="Quatro Queijos">Quatro Queijos</option>
+      </select>
+
+      <label>Borda recheada:</label>
+      <input type="checkbox" id="borda" /> Sim
+
+      <label>Bebida:</label>
+      <select id="bebida">
+        <option value="">Nenhuma</option>
+        <option value="Coca-Cola 2L">Coca-Cola 2L</option>
+        <option value="Guaraná 2L">Guaraná 2L</option>
+        <option value="Suco Natural">Suco Natural</option>
+      </select>
+
+      <label>Observações:</label>
+      <textarea id="obs" placeholder="Ex: sem cebola, maionese à parte..."></textarea>
+
+      <label>Endereço de entrega:</label>
+      <textarea id="endereco" required placeholder="Rua, número, bairro..."></textarea>
+
+      <button type="submit">Finalizar Pedido</button>
+    </form>
+  </section>
+
+  <section id="resumo" style="display: none;">
+    <h2>Resumo do Pedido</h2>
+    <div id="detalhesPedido"></div>
+    <a id="linkWhatsapp" target="_blank">📲 Enviar Pedido pelo WhatsApp</a>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
